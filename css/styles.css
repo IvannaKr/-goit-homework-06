@@ -147,7 +147,8 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 .container {
-  width: 1158px;
+  /* width: 1158px;*/
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -374,7 +375,8 @@ img {
 
 .portfolio {
   background: #fff;
-  padding: 120px 0 120px 0;
+  /* padding: 120px 0 120px 0; */
+  padding-top: 96px;
 }
 .portfolio-title {
   color: #2e2f42;
@@ -399,7 +401,8 @@ img {
 }
 
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
+  width: 100%;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -564,7 +567,7 @@ img {
 }
 
 .footer-bottom {
-      margin-left: 80px;
+  margin-left: 80px;
 }
 .footer-form-text {
   color: var(--WHITE, #fff);
@@ -580,8 +583,7 @@ img {
   gap: 24px;
 }
 
-.footer-email-label{
-
+.footer-email-label {
 }
 
 .footer-input {
@@ -592,7 +594,7 @@ img {
   border: 1px solid #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
-  color: #ffffff; 
+  color: #ffffff;
   font-size: 12px;
   font-weight: 400;
   line-height: 2;
@@ -600,7 +602,7 @@ img {
 }
 
 .footer-input::placeholder {
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .footer-form-btn {
@@ -824,7 +826,7 @@ img {
 .check-input:checked + .check-text span {
   background-color: #404bbf;
   border: none;
- fill: #F4F4FD;
+  fill: #f4f4fd;
 }
 
 .check-icon {
@@ -848,4 +850,11 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 734px;
+
+ 
 }
